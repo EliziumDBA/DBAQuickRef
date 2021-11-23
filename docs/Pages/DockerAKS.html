@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/site.css" type="text/css" />
+    <title>Docker & AKS | DBA Resources</title>
+    
+</head>
+<body>
+    
+    <header>
+        <h2>DBA Resources</h2>
+    </header>
+
+
+<div class='PageSection'>
+<H3>Docker / AKS Information</H3>
+
+<p> Note there are other environment variables, for example starting the SQL Server agent (MSSQL_AGENT_ENABLED=true) is common in addition to specifying a product version</p>
+<li><a href="https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-environment-variables?view=sql-server-2017">Docker</a></li>
+
+<p> Note likely would want to map a file share for durable storage, i.e. Azure Files</p>
+<li><a href="https://docs.microsoft.com/en-us/azure/container-instances/container-instances-volume-azure-files">Azore Storage-Files</a></li>
+
+<p> Should now be able to connect via the IP from something on vnet. as existing use full resource ID via az network vnet show</p>
+<li><a href="https://docs.microsoft.com/en-us/azure/container-instances/container-instances-vnet">Resources IP VNet</a></li>
+
+<p> View the subnet IDs as deploying to existing network (advanced, Azure CNI)</p>
+<li><a href="https://docs.microsoft.com/en-us/azure/aks/configure-azure-cni">Subnet IDs</a></li>
+</div>
+
+
+<div class='PageSection'>
+<p> Deploy the AKS Cluster</p>
+<li><a href="https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-deploy-cluster">Kubernetes-Deploy-Cluster-Tutorial</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal">Kubernetes-WalkThrough-Tutorial</a></li>
+
+<p>   View the storage providers available</p>
+<li><a href="https://docs.microsoft.com/en-us/azure/aks/azure-disks-dynamic-pv">Azure-Disks-Dynamic</a></li>
+
+<li><a href="https://docs.microsoft.com/en-us/sql/linux/tutorial-sql-server-containers-kubernetes?view=sql-server-2017">Deploy the SQL instance</a></li>
+</div>
+
+
+<nav>
+    <ul>  
+    <li><a href="../index.html">Return</a></li>
+    </ul>
+</nav>
+
+<footer>
+        Forever Remain.
+</footer>
+
+
+</body>
+</html>
+
+
+
+
